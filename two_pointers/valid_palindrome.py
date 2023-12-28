@@ -18,7 +18,6 @@ def is_pal_pythonic(pal: str) -> bool:
 
     return pal == pal[::-1]
 
-
 def main():
     palindrome = "kayak"
     print(f"is {palindrome} a palindrome? {is_pal_pythonic(pal=palindrome)}")

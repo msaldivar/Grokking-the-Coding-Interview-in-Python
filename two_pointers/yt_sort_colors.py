@@ -15,8 +15,6 @@ Solution Summary:
 * If the element pointed to by i (white) is 2, we swap it with the element pointed to by the right (blue)
   pointer, if it's not pointint to 2, and decrement the right (blue) pointer
 * The array is sorted when the right (blue) pointer becomes less than i (white) pointer
-
-
 """
 
 def sort_colors(colors: list[int]) -> list[int]:
@@ -37,7 +35,6 @@ def sort_colors(colors: list[int]) -> list[int]:
             i += 1
 
     return colors
-
 
 def main():
     input = [2,0,2,1,1,0]
@@ -60,7 +57,6 @@ def main():
 
     input = [2,1,1,0,0]
     print(f"input {input}: after sorting: {sort_colors(input)}")
-
 
 if __name__ == "__main__":
     main()

@@ -26,10 +26,11 @@ First, sort the array in ascending order. To find a triplet whose sum is equal t
     Input: nums = [0,0,0]
     Output: [[0,0,0]]
 """
+
 def sum_of_three_solution(nums: list[int]) -> list[list[int]]:
     """Two Pointer Solution"""
 
-    nums.sort() #nlogn
+    nums.sort()
     triplets = []
     target = 0
 
@@ -54,12 +55,6 @@ def sum_of_three_solution(nums: list[int]) -> list[list[int]]:
 
     return triplets
 
-
-
-
-
-    
-    
 def main():
     """Run Sum of Three"""
 
@@ -75,26 +70,25 @@ def main():
     target = 0
     print(f"list {nums} target {target}: {sum_of_three_solution(nums)}")
  
-    # nums = [1,-1,0]
-    # target = -1
-    # print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
+    nums = [1,-1,0]
+    target = -1
+    print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
 
-    # nums = [3,7,1,2,8,4,5]
-    # target = 10
-    # print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
+    nums = [3,7,1,2,8,4,5]
+    target = 10
+    print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
 
-    # nums = [3,7,1,2,8,4,5]
-    # target = 21
-    # print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
+    nums = [3,7,1,2,8,4,5]
+    target = 21
+    print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
 
-    # nums = [-1,2,1,-4,5,-3]
-    # target = -8
-    # print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
+    nums = [-1,2,1,-4,5,-3]
+    target = -8
+    print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
 
-    # nums = [-1,2,1,-4,5,-3]
-    # target = 0
-    # print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
-
+    nums = [-1,2,1,-4,5,-3]
+    target = 0
+    print(f"list {nums} target {target}: {sum_of_three_solution(nums, target)}") 
 
 if __name__ == "__main__":
     main()

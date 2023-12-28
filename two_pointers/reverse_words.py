@@ -1,16 +1,7 @@
-
-
-
-
-
 def reverse_words(sentence):
-
     return " ".join(sentence.split()[::-1])
 
-
-
 def main():
-
     sentence = "We love Java "
     print(f"input sentence {sentence} - output: {reverse_words(sentence)}")
 
@@ -26,9 +17,6 @@ def main():
 
     sentence = " Hey"
     print(f"input sentence {sentence} - output: {reverse_words(sentence)}")
-    
-
-
 
 if __name__ == "__main__":
     main()

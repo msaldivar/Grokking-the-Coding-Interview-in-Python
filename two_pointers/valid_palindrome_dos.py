@@ -1,15 +1,6 @@
-
-
-
-
-
-
 def is_palindrome(sentence: str):
     """"""
-
     left, right = 0, len(sentence) - 1
-
-    
     while left <= right: 
         if sentence[left] != sentence[right]:
             removeLeft = sentence[left + 1:right + 1]
@@ -22,8 +13,6 @@ def is_palindrome(sentence: str):
         right -= 1
     
     return True
-
-
 
 def main():
     palindrome ="madame"
@@ -40,10 +29,6 @@ def main():
 
     palindrome = "eeccccbebaeeabebccceea"
     print(f"is {palindrome} a palindrome? {is_palindrome(palindrome)}")
-
-
-
-
 
 if __name__ == "__main__":
     main()

@@ -3,7 +3,6 @@
 0: red
 1: white
 2: blue
-
 """
 
 def sort_colors(colors: list[int]):
@@ -22,13 +21,9 @@ def sort_colors(colors: list[int]):
         else:
             i += 1
 
-
     return colors
 
-
-
-def main():
-    
+def main(): 
     input = [2,0,2,1,1,0]
     print(f"input {input}: after sorting: {sort_colors(input)}")
 

@@ -1,6 +1,6 @@
 
 
-def find_sume_of_three(nums: list[int], target: int) -> list[list[int]]:
+def find_sum_of_three(nums: list[int], target: int) -> list[list[int]]:
     nums.sort()
     triplets = []
 
@@ -22,8 +22,6 @@ def find_sume_of_three(nums: list[int], target: int) -> list[list[int]]:
                 right -= 1
             
     return triplets
-
-
 
 def main():
     nums = [1,-1,0]
