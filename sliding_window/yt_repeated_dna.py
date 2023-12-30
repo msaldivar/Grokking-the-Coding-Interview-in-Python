@@ -19,7 +19,7 @@ def find_repeated_dna_sequences(dna: str) -> list[str]:
     result_set = set()
 
     for i in range(len(dna) - seq_len + 1):
-        window = str(dnaW[i: i + seq_len])
+        window = str(dna[i: i + seq_len])
         if window not in repeated_seq:
             repeated_seq[window] = 1
         else:
